@@ -14,7 +14,7 @@ class PatternTest extends TestCase
         $this->assertEquals(Money::EUR(250), $coffeeWithMilk->getPrice());
     }
 
-    public function getCustomPrices()
+    public function testCustomPrices()
     {
         $coffee = new Coffee(Money::EUR(100));
         $coffeeWithMilk = new Milk($coffee, Money::EUR(200));
